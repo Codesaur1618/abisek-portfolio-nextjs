@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { bio, siteConfig } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, GraduationCap } from "lucide-react";
@@ -20,8 +21,15 @@ export function AboutSection() {
             <div className="glass relative overflow-hidden rounded-3xl p-8">
               <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-violet-500/20 blur-3xl" />
               <div className="relative">
-                <div className="mb-6 flex h-32 w-32 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 text-5xl font-bold text-white shadow-2xl shadow-violet-500/30">
-                  AK
+                <div className="relative mb-6 h-36 w-36 overflow-hidden rounded-2xl ring-2 ring-violet-500/30 shadow-2xl shadow-violet-500/20">
+                  <Image
+                    src={siteConfig.profileImage}
+                    alt={siteConfig.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="144px"
+                    priority
+                  />
                 </div>
                 <h3 className="text-2xl font-bold">{siteConfig.name}</h3>
                 <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">

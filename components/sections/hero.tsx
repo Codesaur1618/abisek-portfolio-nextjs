@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
@@ -23,6 +24,22 @@ export function HeroSection() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/50 to-background" />
 
       <div className="relative z-10 mx-auto max-w-5xl text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.15, duration: 0.6 }}
+          className="mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full ring-2 ring-violet-500/40 ring-offset-2 ring-offset-background shadow-xl shadow-violet-500/20 sm:h-28 sm:w-28"
+        >
+          <Image
+            src={siteConfig.profileImage}
+            alt={siteConfig.name}
+            width={112}
+            height={112}
+            className="h-full w-full object-cover object-top"
+            priority
+          />
+        </motion.div>
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -34,6 +34,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
+  icons: {
+    icon: siteConfig.profileImage,
+    apple: siteConfig.profileImage,
+  },
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -41,12 +45,21 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.displayName} — AI Engineer Portfolio`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
     creator: "@Codesaur1618",
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
@@ -68,6 +81,7 @@ const jsonLd = {
   url: siteConfig.url,
   email: siteConfig.email,
   jobTitle: "AI Engineer & Machine Learning Researcher",
+  image: siteConfig.profileImage,
   sameAs: [siteConfig.github, siteConfig.linkedin],
   alumniOf: [
     {

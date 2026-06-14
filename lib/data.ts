@@ -14,6 +14,8 @@ export const siteConfig = {
   githubUsername: process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "Codesaur1618",
   linkedin: "https://www.linkedin.com/in/abisekkamthan/",
   resumeUrl: "/resume.pdf",
+  profileImage: "/profile.png",
+  ogImage: "/og-image.png",
 };
 
 export const roleHeadlines = [
@@ -135,7 +137,7 @@ export const projects = [
     title: "Langton's Ant Research",
     description:
       "Computational research exploring emergent complexity in cellular automata, analysing pattern formation, entropy dynamics, and long-term behavioural transitions in Langton's Ant.",
-    image: "/projects/langtons-ant.svg",
+    image: "/projects/langtons-ant.png",
     tags: ["Python", "Research", "Cellular Automata", "Simulation"],
     github: "https://github.com/Codesaur1618",
     demo: null,
@@ -146,7 +148,7 @@ export const projects = [
     title: "Multimodal AI Analysis Prototype",
     description:
       "End-to-end PoC integrating text, audio, and video with NLP/ML models. Flask deployment for real-time analysis and explainable outputs for non-technical stakeholders.",
-    image: "/projects/multimodal.svg",
+    image: "/projects/multimodal.png",
     tags: ["Python", "Flask", "NLP", "Computer Vision", "ML"],
     github: "https://github.com/Codesaur1618",
     demo: null,
@@ -157,7 +159,7 @@ export const projects = [
     title: "GNN Drug Safety Analytics",
     description:
       "Graph neural network and sentiment analysis pipeline for drug interaction detection and adverse reaction analysis. Published on IEEE Xplore with interpretability focus.",
-    image: "/projects/drug-safety.svg",
+    image: "/projects/drug-safety.png",
     tags: ["PyTorch", "GNN", "NLP", "BioBERT", "Flask"],
     github: "https://github.com/Codesaur1618/GNN-LLM-Enhanced-Drug-Interaction-detection-and-adverse-reaction-analysis-with-sentiment",
     demo: null,
@@ -168,7 +170,7 @@ export const projects = [
     title: "Hybrid Forecasting Dashboard",
     description:
       "ARIMA–LSTM stacked ensemble for multivariate ocean acidification forecasting with geospatial dashboard concepts. Published in IJLRET.",
-    image: "/projects/forecasting.svg",
+    image: "/projects/forecasting.png",
     tags: ["LSTM", "ARIMA", "Time Series", "Dashboard", "Python"],
     github: "https://github.com/Codesaur1618",
     demo: null,
@@ -179,7 +181,7 @@ export const projects = [
     title: "AI Vision System — ANPR",
     description:
       "License plate recognition system using OpenCV and deep learning. Detects and extracts plate regions from live or recorded video with high accuracy.",
-    image: "/projects/anpr.svg",
+    image: "/projects/anpr.png",
     tags: ["OpenCV", "Python", "Computer Vision", "Deep Learning"],
     github: "https://github.com/Codesaur1618/ANPR",
     demo: null,
@@ -190,7 +192,7 @@ export const projects = [
     title: "Medical Data Pipeline & Quality Reporting",
     description:
       "GAN-based super-resolution for medical imaging with SSIM/PSNR quality metrics. Reproducible methodology published at IEEE ISPCC 2025.",
-    image: "/projects/medical.svg",
+    image: "/projects/medical.png",
     tags: ["GAN", "TensorFlow", "Medical Imaging", "Research"],
     github: "https://github.com/Codesaur1618",
     demo: null,
