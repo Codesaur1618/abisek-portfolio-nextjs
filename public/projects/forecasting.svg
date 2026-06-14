@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#0f0a1e"/>
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <polyline points="120,280 220,220 320,240 420,160 520,180 620,100 680,120" stroke="url(#g4)" stroke-width="3" fill="none"/>
+  <circle cx="120" cy="280" r="6" fill="#06b6d4"/>
+  <circle cx="420" cy="160" r="6" fill="#8b5cf6"/>
+  <circle cx="680" cy="120" r="6" fill="#a78bfa"/>
+  <rect x="150" y="60" width="500" height="200" rx="8" stroke="#8b5cf6" stroke-width="1" fill="#1a1033" opacity="0.5"/>
+  <text x="400" y="360" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="24" font-weight="600">Forecasting Dashboard</text>
+</svg>

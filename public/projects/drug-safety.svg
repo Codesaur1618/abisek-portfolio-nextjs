@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#0f0a1e"/>
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="180" r="40" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="400" cy="120" r="35" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="550" cy="200" r="45" fill="#6366f1" opacity="0.4"/>
+  <circle cx="350" cy="260" r="30" fill="#ec4899" opacity="0.4"/>
+  <line x1="250" y1="180" x2="400" y2="120" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+  <line x1="400" y1="120" x2="550" y2="200" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+  <line x1="250" y1="180" x2="350" y2="260" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
+  <line x1="350" y1="260" x2="550" y2="200" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+  <text x="400" y="360" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="24" font-weight="600">GNN Drug Safety</text>
+</svg>

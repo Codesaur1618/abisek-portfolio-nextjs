@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abisek Portfolio
 
-## Getting Started
+Premium portfolio website built with Next.js, TypeScript, Tailwind CSS, Framer Motion, GSAP, and Three.js.
 
-First, run the development server:
+## Features
+
+- Interactive 3D neural network hero background (Three.js)
+- GSAP scroll animations and page transitions
+- Framer Motion micro-interactions
+- Dark/light theme toggle
+- GitHub API integration with contribution graph
+- Interactive skills radar chart and progress bars
+- Full SEO setup (Open Graph, Twitter cards, JSON-LD, sitemap, robots)
+- Responsive glassmorphism design
+- 15 portfolio sections
+
+## Tech Stack
+
+- **Framework:** Next.js 15+ (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **UI:** Shadcn-style components
+- **Animation:** Framer Motion, GSAP
+- **3D:** Three.js, React Three Fiber
+- **Charts:** Recharts
+- **Icons:** Lucide React
+- **Deployment:** Vercel-ready
+
+## Installation
+
+```bash
+git clone <your-repo-url>
+cd abisek-portfolio-nextjs
+npm install
+cp .env.example .env.local
+```
+
+## Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Description |
+|---|---|
+| `GITHUB_TOKEN` | Optional GitHub PAT for higher API rate limits |
+| `NEXT_PUBLIC_SITE_URL` | Production site URL for SEO |
+| `NEXT_PUBLIC_GITHUB_USERNAME` | GitHub username (default: Codesaur1618) |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel (Recommended)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push this repo to GitHub (`Codesaur1618/abisek-portfolio-nextjs`)
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repository
+3. Vercel auto-detects Next.js — no build settings changes needed
+4. Add environment variables (optional but recommended):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Variable | Value | Notes |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.vercel.app` | Set after first deploy for correct SEO |
+| `NEXT_PUBLIC_GITHUB_USERNAME` | `Codesaur1618` | GitHub profile for stats section |
+| `GITHUB_TOKEN` | *(optional)* | GitHub PAT for higher API rate limits |
 
-## Deploy on Vercel
+5. Deploy — production URL will be live in ~2 minutes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Codesaur1618/abisek-portfolio-nextjs)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Manual build
+
+```bash
+npm run build
+npm run start
+```
+
+## Customization
+
+- **Content:** Edit `lib/data.ts` for all portfolio content
+- **Theme:** Modify CSS variables in `app/globals.css`
+- **Sections:** Components live in `components/sections/`
+- **Resume:** Replace `public/resume.pdf` with your CV
+
+## Project Structure
+
+```
+abisek-portfolio-nextjs/
+├── app/                  # Next.js App Router
+├── components/
+│   ├── effects/          # Cursor, particles, transitions
+│   ├── layout/           # Navbar, footer
+│   ├── providers/        # Theme provider
+│   ├── sections/         # Page sections
+│   ├── three/            # Three.js components
+│   └── ui/               # Shadcn UI components
+├── lib/                  # Data, utils, GitHub API
+├── public/               # Static assets
+└── styles/               # Global styles (app/globals.css)
+```
+
+## License
+
+MIT

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#0f0a1e"/>
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect x="250" y="100" width="300" height="200" rx="12" stroke="url(#g6)" stroke-width="2" fill="#1a1033"/>
+  <circle cx="350" cy="180" r="30" fill="#f97316" opacity="0.2" stroke="#f97316" stroke-width="1"/>
+  <circle cx="450" cy="200" r="25" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="1"/>
+  <path d="M280 250 Q400 180 520 250" stroke="#a78bfa" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <text x="400" y="360" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="24" font-weight="600">Medical Pipeline</text>
+</svg>

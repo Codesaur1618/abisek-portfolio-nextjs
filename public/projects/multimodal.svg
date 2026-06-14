@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#0f0a1e"/>
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="80" width="180" height="120" rx="12" stroke="url(#g2)" stroke-width="2" fill="#1a1033"/>
+  <rect x="310" y="80" width="180" height="120" rx="12" stroke="url(#g2)" stroke-width="2" fill="#1a1033"/>
+  <rect x="520" y="80" width="180" height="120" rx="12" stroke="url(#g2)" stroke-width="2" fill="#1a1033"/>
+  <text x="190" y="150" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="14">Text</text>
+  <text x="400" y="150" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="14">Audio</text>
+  <text x="610" y="150" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="14">Video</text>
+  <rect x="250" y="260" width="300" height="60" rx="30" fill="url(#g2)" opacity="0.3"/>
+  <text x="400" y="360" text-anchor="middle" fill="#a78bfa" font-family="system-ui" font-size="24" font-weight="600">Multimodal AI</text>
+</svg>

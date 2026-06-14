@@ -1,0 +1,6 @@
+/* Design tokens — imported by app/globals.css */
+:root {
+  --gradient-violet: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  --glass-blur: 16px;
+  --section-gap: 6rem;
+}
