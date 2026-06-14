@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { ArrowDown, Download, Mail } from "lucide-react";
+import { ArrowDown, Download, Mail, Newspaper } from "lucide-react";
 import { siteConfig } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { TypingEffect } from "@/components/effects/typing-effect";
@@ -100,6 +100,32 @@ export function HeroSection() {
             </Link>
           </Button>
         </motion.div>
+
+        <motion.a
+          href={siteConfig.linkedinNewsletter}
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.15 }}
+          className="group mx-auto mt-8 flex max-w-xl flex-col items-center gap-3 rounded-2xl border border-[#0a66c2]/30 bg-[#0a66c2]/10 px-6 py-4 backdrop-blur-sm transition-all hover:border-[#0a66c2]/50 hover:bg-[#0a66c2]/15 hover:shadow-lg hover:shadow-[#0a66c2]/10 sm:flex-row sm:text-left"
+          data-cursor
+        >
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0a66c2]/20">
+            <Newspaper className="h-5 w-5 text-[#70b7ff]" />
+          </div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="text-sm font-semibold text-foreground">
+              {siteConfig.newsletter.title}
+            </p>
+            <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
+              {siteConfig.newsletter.description}
+            </p>
+          </div>
+          <span className="shrink-0 rounded-full bg-[#0a66c2] px-4 py-2 text-xs font-semibold text-white transition-transform group-hover:scale-105">
+            Subscribe on LinkedIn
+          </span>
+        </motion.a>
       </div>
 
       <motion.div

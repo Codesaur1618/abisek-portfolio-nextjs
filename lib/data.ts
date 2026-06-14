@@ -13,6 +13,13 @@ export const siteConfig = {
   github: "https://github.com/Codesaur1618",
   githubUsername: process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "Codesaur1618",
   linkedin: "https://www.linkedin.com/in/abisekkamthan/",
+  linkedinNewsletter:
+    "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7294809767837937664",
+  newsletter: {
+    title: "AI, Data & Research Insights",
+    description:
+      "Subscribe on LinkedIn for updates on machine learning, data science, research, and building intelligent systems.",
+  },
   resumeUrl: "/resume.pdf",
   profileImage: "/profile.png",
   ogImage: "/og-image.png",

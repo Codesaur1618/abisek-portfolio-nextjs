@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, Newspaper } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons/social";
 import { siteConfig } from "@/lib/data";
 
@@ -35,6 +35,16 @@ export function Footer() {
               data-cursor
             >
               <LinkedInIcon />
+            </Link>
+            <Link
+              href={siteConfig.linkedinNewsletter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-[#0a66c2]/20 hover:text-[#70b7ff]"
+              aria-label="Subscribe to LinkedIn newsletter"
+              data-cursor
+            >
+              <Newspaper className="h-5 w-5" />
             </Link>
             <Link
               href={`mailto:${siteConfig.email}`}
